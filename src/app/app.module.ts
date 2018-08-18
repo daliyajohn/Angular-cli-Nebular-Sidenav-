@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { NbThemeModule } from '@nebular/theme';
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NbThemeModule.forRoot({ name: 'default' })
   ],
   providers: [],
   bootstrap: [AppComponent]
